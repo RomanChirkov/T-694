@@ -1,0 +1,25 @@
+using System;
+
+namespace ConsoleApp3
+{
+
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            double y = 6.33, x = 0.1722, z =3.25*Math.Pow(10,-4), Y=0;
+
+            double Y1 = 5 * Math.Atan(x);
+            double Y2 = 1 / 4 * Math.Acos(x);
+            double Y3 = x + 3 * Math.Abs(x - y) + Math.Pow(x, 2);
+            double Y4 = Math.Abs(x - y) * z + Math.Pow(x, 2);
+
+            Y = Y1 - Y2 * (Y3 / Y4);
+
+            Console.WriteLine("Y = " + Y);
+            
+            Console.ReadKey();
+        }
+    }
+}
