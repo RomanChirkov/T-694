@@ -1,0 +1,25 @@
+using System;
+
+namespace ConsoleApp3
+{
+
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            char C = 'e';
+            string S = "Repka";
+
+            Console.WriteLine(S);
+
+            string cs = C.ToString();
+
+            S = S.Replace(cs, cs + cs);
+            Console.WriteLine(S);
+
+
+            Console.ReadKey();
+        }
+    }
+}
